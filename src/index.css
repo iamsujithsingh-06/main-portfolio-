@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-glow: var(--primary-glow);
+  --color-accent: var(--accent);
+
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-border-custom: var(--border-color);
+  --color-border-custom-hover: var(--border-color-hover);
+}
+
+:root {
+  /* Light Mode (Default for :root) — Clean white with light blue accents */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-glow: rgba(37, 99, 235, 0.12);
+  --accent: #3b82f6;
+
+  --bg-dark: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(37, 99, 235, 0.14);
+  --border-color-hover: rgba(37, 99, 235, 0.4);
+
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --section-elevated-bg: #ffffff;
+  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-elevated: 0 4px 12px rgba(15, 23, 42, 0.06), 0 12px 30px rgba(15, 23, 42, 0.08);
+
+  scroll-behavior: smooth;
+}
+
+.dark {
+  /* Dark Mode — Premium electric blue on deep black */
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-glow: rgba(59, 130, 246, 0.15);
+  --accent: #60a5fa;
+
+  --bg-dark: #030712;
+  --bg-card: #080c14;
+  --bg-card-hover: #0e1420;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --border-color: rgba(59, 130, 246, 0.1);
+  --border-color-hover: rgba(59, 130, 246, 0.35);
+
+  --scrollbar-track: #030712;
+  --scrollbar-thumb: rgba(59, 130, 246, 0.35);
+  --section-elevated-bg: #030712;
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.5), 0 12px 36px rgba(0, 0, 0, 0.55);
+}
+
+/* Base resets & styles */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Title Font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  transition: background-color 0.3s ease;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Theme Switch Smooth Transition Utility */
+.theme-transition-all {
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle particle glow helper */
+.glow-effect {
+  position: relative;
+}
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Shimmer keyframe (used in project/cert hover effects) */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

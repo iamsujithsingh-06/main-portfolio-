@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- favicon removed by request -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Sujith Singh S M | Full Stack & Game Developer</title>
+    <meta name="title" content="Sujith Singh S M | Full Stack & Game Developer" />
+    <meta name="description" content="Professional portfolio of Sujith Singh S M — Full Stack & Game Developer. View projects, skills, certifications, and get in touch." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sujith Singh S M | Full Stack & Game Developer" />
+    <meta property="og:description" content="Professional portfolio of Sujith Singh S M — Full Stack & Game Developer. View projects, skills, certifications, and get in touch." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Sujith Singh S M | Full Stack & Game Developer" />
+    <meta property="twitter:description" content="Professional portfolio of Sujith Singh S M — Full Stack & Game Developer. View projects, skills, certifications, and get in touch." />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--
+      Synchronous theme bootstrap: runs BEFORE React mounts to prevent FOUC.
+      Reads saved preference from localStorage and applies the `.dark` class
+      on <html> so first paint matches the user's last selected mode.
+    -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('sujith-portfolio-theme-mode');
+          var mode = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+          if (mode === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+          document.documentElement.setAttribute('data-theme', mode);
+        } catch (e) {
+          // If localStorage is unavailable, default to dark mode
+          document.documentElement.classList.add('dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
