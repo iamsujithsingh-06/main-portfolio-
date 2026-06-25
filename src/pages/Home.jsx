@@ -145,11 +145,6 @@ export const Home = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="w-full max-w-[300px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[480px] relative z-10 flex items-center justify-center"
           >
-            {/* Soft glow layers behind the image */}
-            <div className="absolute -inset-6 rounded-[3rem] bg-primary/10 blur-2xl opacity-70 pointer-events-none" />
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary/15 blur-3xl pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5 blur-xl pointer-events-none" />
-
             <img
               src={personalInfo.profileImage}
               alt="Sujith"
