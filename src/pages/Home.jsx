@@ -128,7 +128,7 @@ export const Home = () => {
 
             <a
               href={personalInfo.resumePdf}
-              download="Sujith_Resume.pdf"
+              download="Sujith_Singh_SM_Resume.pdf"
               className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-border-custom bg-bg-card hover:bg-primary-glow text-text-primary hover:text-primary font-semibold hover:border-border-custom-hover hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base whitespace-nowrap"
             >
               <FaDownload className="text-sm" />

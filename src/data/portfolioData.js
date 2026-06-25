@@ -8,7 +8,7 @@ export const personalInfo = {
   intro: "Building intelligent applications, modern web experiences, and solving real-world problems using AI and software engineering.",
   aboutDescription: "I am Sujith, a passionate AI & Data Science student interested in Artificial Intelligence, Full Stack Development, Machine Learning, and Game Development. I enjoy building real-world solutions that solve practical problems.",
   profileImage: sujithPortfolioImage,
-  resumePdf: "/resume/Sujith_Resume.pdf",
+  resumePdf: "/resume.pdf",
   details: {
     name: "Sujith Singh S M",
     degree: "B.Tech Artificial Intelligence & Data Science",
@@ -94,11 +94,11 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Sports E-Commerce Website",
-    description: "An interactive sports store platform featuring IPL/international team jerseys, gear, and sports accessories with a seamless cart system.",
-    tags: ["React", "Node.js", "MongoDB", "JavaScript"],
-    github: "",
-    demo: "",
+    name: "Forward Stroke",
+    description: "Forward Stroke is a modern full-stack cricket merchandise e-commerce platform built with the MERN stack. It includes secure authentication, product browsing, shopping cart, payment integration, responsive UI, and an admin dashboard, providing a complete online shopping experience for cricket fans.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT", "Context API"],
+    github: "https://github.com/iamsujithsingh-06/forward-stroke",
+    demo: "https://forwardstroke.vercel.app/",
     image: "ecommerce"
   },
   {

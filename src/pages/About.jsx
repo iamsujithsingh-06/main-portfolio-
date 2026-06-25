@@ -73,7 +73,7 @@ export const About = () => {
             <div className="pt-2 text-left">
               <a
                 href={personalInfo.resumePdf}
-                download="Sujith_Resume.pdf"
+                download="Sujith_Singh_SM_Resume.pdf"
                 className="px-6 py-3.5 rounded-xl bg-primary text-text-primary font-semibold hover:bg-primary-hover shadow-lg shadow-primary/20 hover:shadow-primary/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 cursor-pointer w-fit"
               >
                 <FaFileDownload />
