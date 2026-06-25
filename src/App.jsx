@@ -9,6 +9,7 @@ import BackToTop from './components/BackToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
+import DeveloperJourney from './pages/DeveloperJourney';
 import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
 import Contact from './pages/Contact';
@@ -34,6 +35,7 @@ function MainApp() {
         <Home />
         <About />
         <Skills />
+        <DeveloperJourney />
         <Projects />
         <Certifications />
         <Contact />
