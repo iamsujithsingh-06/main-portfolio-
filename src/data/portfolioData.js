@@ -1,5 +1,5 @@
 // Sujith's Portfolio Data
-import sujithPortfolioImage from '../assets/sujith portfolio.png';
+import sujithProfileImage from '../assets/sujith_singh_.png';
 
 export const personalInfo = {
   name: "Sujith",
@@ -7,7 +7,7 @@ export const personalInfo = {
   roles: ["Full Stack Developer", "AI Enthusiast", "Game Developer", "Machine Learning Learner"],
   intro: "Building intelligent applications, modern web experiences, and solving real-world problems using AI and software engineering.",
   aboutDescription: "I am Sujith, a passionate AI & Data Science student interested in Artificial Intelligence, Full Stack Development, Machine Learning, and Game Development. I enjoy building real-world solutions that solve practical problems.",
-  profileImage: sujithPortfolioImage,
+  profileImage: sujithProfileImage,
   resumePdf: "/resume.pdf",
   details: {
     name: "Sujith Singh S M",

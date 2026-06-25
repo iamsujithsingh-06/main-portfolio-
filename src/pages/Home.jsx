@@ -137,22 +137,26 @@ export const Home = () => {
           </motion.div>
         </div>
 
-        {/* Right Side: Profile Image (main visual focus) */}
+        {/* Right Side: Profile Image */}
         <div className="w-full flex justify-center md:justify-end order-1 md:order-2">
-          <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] lg:max-w-[400px] relative z-10">
-            {/* Soft glow behind the image */}
-            <div className="absolute -inset-4 rounded-[2rem] bg-primary/10 blur-2xl opacity-70 pointer-events-none" />
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="w-full max-w-[300px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[480px] relative z-10 flex items-center justify-center"
+          >
+            {/* Soft glow layers behind the image */}
+            <div className="absolute -inset-6 rounded-[3rem] bg-primary/10 blur-2xl opacity-70 pointer-events-none" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary/15 blur-3xl pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5 blur-xl pointer-events-none" />
 
-            <div className="relative rounded-[1.5rem] overflow-hidden border border-border-custom/40 shadow-2xl shadow-primary/10">
-              <img
-                src={personalInfo.profileImage}
-                alt="Sujith"
-                loading="eager"
-                className="w-full h-auto object-cover block"
-              />
-            </div>
-          </div>
+            <img
+              src={personalInfo.profileImage}
+              alt="Sujith"
+              loading="eager"
+              className="w-full h-auto max-h-[750px] object-contain relative z-10 animate-float"
+            />
+          </motion.div>
         </div>
 
       </div>
