@@ -140,8 +140,8 @@ export const Home = () => {
         {/* Right Side: Profile Image */}
         <div className="w-full flex justify-center md:justify-end order-1 md:order-2">
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="w-full max-w-[300px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[480px] relative z-10 flex items-center justify-center"
           >
@@ -154,7 +154,7 @@ export const Home = () => {
               src={personalInfo.profileImage}
               alt="Sujith"
               loading="eager"
-              className="w-full h-auto max-h-[750px] object-contain relative z-10 animate-float"
+              className="w-full h-auto max-h-[720px] object-contain relative z-10"
             />
           </motion.div>
         </div>

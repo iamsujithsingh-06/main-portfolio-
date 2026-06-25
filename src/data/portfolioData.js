@@ -1,5 +1,5 @@
 // Sujith's Portfolio Data
-import sujithProfileImage from '../assets/sujith_singh_.png';
+import sujithProfileImage from '../assets/sujith-singh-4k.png';
 
 export const personalInfo = {
   name: "Sujith",
