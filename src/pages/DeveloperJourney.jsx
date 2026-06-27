@@ -9,6 +9,7 @@ const journeyCards = [
     title: 'GitHub',
     description:
       'Explore my repositories, full-stack applications, AI projects, and open-source development journey.',
+    stat: { value: '20+', label: 'Repositories' },
     highlights: [
       'Full Stack Development',
       'MERN Projects',
@@ -22,6 +23,7 @@ const journeyCards = [
     title: 'LeetCode',
     description:
       'Consistently solving Data Structures & Algorithms problems to improve analytical thinking and coding skills.',
+    stat: { value: '85+', label: 'Problems Solved' },
     highlights: [
       '80+ Problems Solved',
       'Java',
@@ -35,6 +37,7 @@ const journeyCards = [
     title: 'CodeChef',
     description:
       'Building strong competitive programming skills through continuous coding challenges and algorithm practice.',
+    stat: { value: '100+', label: 'Problems Solved' },
     highlights: [
       '100+ Problems Solved',
       'Competitive Programming',
@@ -119,9 +122,20 @@ export const DeveloperJourney = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-text-secondary leading-relaxed mb-6 flex-grow">
+                <p className="text-sm text-text-secondary leading-relaxed mb-4 flex-grow">
                   {card.description}
                 </p>
+
+                {/* Stat Highlight */}
+                <div className="flex items-baseline gap-2 mb-4 pl-1">
+                  <span className="relative text-2xl sm:text-3xl font-extrabold text-primary">
+                    <span className="relative z-10">{card.stat.value}</span>
+                    <span className="absolute inset-0 blur-sm bg-primary/20 rounded-full -z-0" />
+                  </span>
+                  <span className="text-xs sm:text-sm font-medium text-text-secondary">
+                    {card.stat.label}
+                  </span>
+                </div>
 
                 {/* Highlights */}
                 <ul className="space-y-2.5 mb-6">
