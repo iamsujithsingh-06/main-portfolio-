@@ -23,9 +23,9 @@ const journeyCards = [
     title: 'LeetCode',
     description:
       'Consistently solving Data Structures & Algorithms problems to improve analytical thinking and coding skills.',
-    stat: { value: '85+', label: 'Problems Solved' },
+    stat: { value: '100+', label: 'Problems Solved' },
     highlights: [
-      '80+ Problems Solved',
+      '100+ Problems Solved',
       'Java',
       'Data Structures & Algorithms',
       'Problem Solving',

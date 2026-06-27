@@ -9,8 +9,8 @@ const navLinks = [
   { name: 'Home', targetId: 'home' },
   { name: 'About Me', targetId: 'about' },
   { name: 'Skills', targetId: 'skills' },
+  { name: 'Coding Profiles', targetId: 'journey' },
   { name: 'Projects', targetId: 'projects' },
-  { name: 'Developing Journey', targetId: 'journey' },
   { name: 'Certifications', targetId: 'certifications' },
   { name: 'Contact', targetId: 'contact' },
 ];
