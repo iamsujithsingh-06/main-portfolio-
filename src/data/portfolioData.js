@@ -99,7 +99,7 @@ export const projectsData = [
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT", "Context API"],
     github: "https://github.com/iamsujithsingh-06/forward-stroke",
     demo: "https://forwardstroke.vercel.app/",
-    image: "ecommerce"
+    image: "forward-stroke-preview.png"
   },
   {
     id: 3,

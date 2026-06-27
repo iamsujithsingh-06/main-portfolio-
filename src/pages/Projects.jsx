@@ -64,8 +64,10 @@ const ProjectCard = ({ project, index }) => {
   const visual = projectVisualMap[project.id] || projectVisualMap[1];
   const [imgError, setImgError] = React.useState(false);
 
-  // Build the candidate image URL from `/public/projects/{image}.jpg`
-  const candidateSrc = `/projects/${project.image}.jpg`;
+  // Build the candidate image URL — supports names with or without extension
+  const candidateSrc = project.image.includes('.')
+    ? `/projects/${project.image}`
+    : `/projects/${project.image}.jpg`;
 
   // Live demo availability
   const hasLiveDemo = isRealUrl(project.demo);
@@ -90,12 +92,18 @@ const ProjectCard = ({ project, index }) => {
         <div className={`absolute inset-0 bg-gradient-to-t ${visual.gradient} opacity-80`} />
 
         {!imgError ? (
-          <img
-            src={candidateSrc}
-            onError={() => setImgError(true)}
-            alt={project.name}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+          <div className="relative w-full h-full">
+            <img
+              src={candidateSrc}
+              onError={() => setImgError(true)}
+              alt={project.name}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute top-3 right-3 flex items-center gap-1.5 text-[10px] tracking-wider font-semibold uppercase text-primary bg-primary-glow border border-primary/20 px-2.5 py-1 rounded-full backdrop-blur-sm shadow-lg">
+              <FaImage className="text-[9px]" />
+              Application Preview
+            </div>
+          </div>
         ) : (
           /* Professional Placeholder Card with "Project Preview Coming Soon" */
           <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4 text-center">

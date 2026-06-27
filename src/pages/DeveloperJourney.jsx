@@ -62,7 +62,7 @@ export const DeveloperJourney = () => {
         {/* Section Heading */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-primary-glow px-3 py-1 rounded-full border border-primary/20 mb-3 inline-block">
-            Journey
+            CODING
           </span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -71,12 +71,10 @@ export const DeveloperJourney = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display mb-3 uppercase"
           >
-            DEVELOPER JOURNEY
+            CODING PROFILES
           </motion.h2>
           <p className="text-text-secondary text-sm sm:text-base max-w-xl mx-auto mb-6">
-            Explore my journey as a software developer through competitive
-            programming, open-source contributions, and real-world project
-            development.
+            Explore my coding journey through GitHub, LeetCode, and CodeChef, where I build innovative projects, solve challenging problems, strengthen my problem-solving skills, and continuously grow as a Full Stack & Game Developer.
           </p>
           <motion.div
             initial={{ width: 0 }}
