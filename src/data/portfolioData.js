@@ -148,37 +148,45 @@ export const projectsData = [
   }
 ];
 
-// Certificate images live in /public/certificates/{id}.jpg
-// `link` is intentionally left as an empty string when no real certificate
-// URL is available. The UI will show a disabled "Certificate Coming Soon"
-// state instead of navigating to a broken page.
 export const certificationsData = [
   {
     id: 1,
-    name: "Python Certification",
-    organization: "Python Institute / Coursera",
-    date: "July 2025",
-    link: ""
+    title: "Diploma in C & C++ Programming",
+    issuer: "AIBSS Computer Education",
+    category: "Programming",
+    year: "2023",
+    image: "/certificates/c.jpeg",
   },
   {
     id: 2,
-    name: "Java Certification",
-    organization: "Oracle / Udemy",
-    date: "September 2025",
-    link: ""
+    title: "Java Programming Course",
+    issuer: "Tyro HR India Pvt. Ltd. & Adhi College of Engineering & Technology",
+    category: "Programming",
+    year: "2024",
+    image: "/certificates/java.jpeg",
   },
   {
     id: 3,
-    name: "C Certification",
-    organization: "Great Learning / Hackerrank",
-    date: "November 2025",
-    link: ""
+    title: "Diploma in Python Programming",
+    issuer: "AIBSS Computer Education",
+    category: "Programming",
+    year: "2023",
+    image: "/certificates/python.jpeg",
   },
   {
     id: 4,
-    name: "C++ Certification",
-    organization: "Coding Ninjas / Sololearn",
-    date: "February 2026",
-    link: ""
-  }
+    title: "Smart India Hackathon 2024",
+    issuer: "Adhi College of Engineering & Technology",
+    category: "Hackathon",
+    year: "2024",
+    image: "/certificates/sih 1.jpeg",
+  },
+  {
+    id: 5,
+    title: "Smart India Hackathon 2025",
+    issuer: "Adhi College of Engineering & Technology",
+    category: "Hackathon",
+    year: "2025",
+    image: "/certificates/sih2.jpeg",
+  },
 ];
